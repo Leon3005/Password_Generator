@@ -98,12 +98,21 @@ function generatePassword() {
     "Would you like to use special characters?"
   );
 
+  //This array stores selected options for the password.
   let passwordData = [];
-
+  //this if statement will push the selected option into the passwordData array.
   if (passwordLCasePrompt) {
     Array.prototype.push.apply(passwordData, lowerCase);
   }
-
+  if (passwordUCasePrompt) {
+    Array.prototype.push.apply(passwordData, upperCase);
+  }
+  if (passwordNumbersPrompt) {
+    Array.prototype.push.apply(passwordData, numbers);
+  }
+  if (passwordSpecialPrompt) {
+    Array.prototype.push.apply(passwordData, specialCharacters);
+  }
   // Return our created password
   return password;
 }
