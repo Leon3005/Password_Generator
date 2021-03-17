@@ -68,14 +68,14 @@ function generatePassword() {
 
   // Logic would go here
   //Prompt for password length
-  let passwordLengthPrompt = prompt(
+  let passwordLength = prompt(
     "What is the required length of your password. Must be between 8-128 characters."
   );
   // if statement to make sure user is inputting a number
-  if (isNaN(passwordLengthPrompt)) {
+  if (isNaN(passwordLength)) {
     alert("Entered value is not a number. Please try again.");
     return;
-  } else if (passwordLengthPrompt < 8 || passwordLengthPrompt > 128) {
+  } else if (passwordLength < 8 || passwordLength > 128) {
     alert("Entered value must be between 8 and 128. Please try again.");
     return;
   }
@@ -113,6 +113,8 @@ function generatePassword() {
   if (passwordSpecialPrompt) {
     Array.prototype.push.apply(passwordData, specialCharacters);
   }
+
+  for (let i = 0; i < passwordLength; ) {}
   // Return our created password
   return password;
 }
