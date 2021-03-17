@@ -5,22 +5,22 @@ var generateBtn = document.querySelector("#generate");
 const passwordLengthPrompt = prompt("What is the required length of your password");
 
 //Prompt for lowercase
-const passwordLCasePrompt = prompt("Would you like to use lowercase characters?")
+const passwordLCasePrompt = confirm("Would you like to use lowercase characters?");
 
 //Prompt for uppercase
-const passwordUCasePrompt = prompt("Would you like to use uppercase characters?")
+const passwordUCasePrompt = confirm("Would you like to use uppercase characters?");
 
 //Prompt for numbers
-const passwordNumbersPrompt = prompt("Would you like to use numbers?")
+const passwordNumbersPrompt = confirm("Would you like to use numbers?");
 
 //Prompt for special characters
-const passwordSpecialPrompt = prompt("Would you like to use special characters?")
+const passwordSpecialPrompt = confirm("Would you like to use special characters?");
 
 //Characters for the generated password
-const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-const specialCharacters = ["!", "?", "*", ".", ",", "$"]
+const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const specialCharacters = ["!", "?", "*", ".", ",", "$"];
 
 // Declare a new function on line 3
 function generatePassword() {
