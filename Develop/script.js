@@ -114,7 +114,12 @@ function generatePassword() {
     Array.prototype.push.apply(passwordData, specialCharacters);
   }
 
-  for (let i = 0; i < passwordLength; ) {}
+  //Chooses a random index from passwordData. Dependant on passwordLength
+  for (let i = 0; i < passwordLength; i++) {
+    let index = Math.floor(Math.random() * passwordData.length);
+    passwordData[index];
+    password += passwordData[index];
+  }
   // Return our created password
   return password;
 }
