@@ -73,8 +73,13 @@ function generatePassword() {
   );
   // if statement to make sure user is inputting a number
   if (isNaN(passwordLengthPrompt)) {
-    passwordLengthPrompt = prompt("Please enter a valid number.");
+    alert("Entered value is not a number. Please try again.");
+    return;
+  } else if (passwordLengthPrompt < 8 || passwordLengthPrompt > 128) {
+    alert("Entered value must be between 8 and 128. Please try again.");
+    return;
   }
+
   //Prompt for lowercase
   const passwordLCasePrompt = confirm(
     "Would you like to use lowercase characters?"
@@ -92,6 +97,12 @@ function generatePassword() {
   const passwordSpecialPrompt = confirm(
     "Would you like to use special characters?"
   );
+
+  let passwordData = [];
+
+  if (passwordLCasePrompt) {
+    Array.prototype.push.apply(passwordData, lowerCase);
+  }
 
   // Return our created password
   return password;
