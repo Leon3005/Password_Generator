@@ -4,6 +4,18 @@ var generateBtn = document.querySelector("#generate");
 //Prompt for password length
 const passwordLengthPrompt = prompt("What is the required length of your password");
 
+//Prompt for lowercase
+const passwordLCasePrompt = prompt("Would you like to use lowercase characters?")
+
+//Prompt for uppercase
+const passwordUCasePrompt = prompt("Would you like to use uppercase characters?")
+
+//Prompt for numbers
+const passwordNumbersPrompt = prompt("Would you like to use numbers?")
+
+//Prompt for special characters
+const passwordSpecialPrompt = prompt("Would you like to use special characters?")
+
 //Characters for the generated password
 const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
