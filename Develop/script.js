@@ -25,7 +25,7 @@ const specialCharacters = ["!", "?", "*", ".", ",", "$"]
 // Declare a new function on line 3
 function generatePassword() {
 	// Create a variable to store our generated password
-	var password = ''
+	let password = ''
 
 	// Logic would go here
 	...
@@ -36,8 +36,8 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  let password = generatePassword();
+  let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
