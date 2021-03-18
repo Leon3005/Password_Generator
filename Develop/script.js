@@ -118,6 +118,7 @@ function generatePassword() {
   for (let i = 0; i < passwordLength; i++) {
     let index = Math.floor(Math.random() * passwordData.length);
     passwordData[index];
+    //Addition assignment operator
     password += passwordData[index];
   }
   // Return our created password
