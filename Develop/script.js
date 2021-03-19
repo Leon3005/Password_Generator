@@ -75,6 +75,11 @@ function generatePassword() {
   if (isNaN(passwordLength)) {
     alert("Entered value is not a number. Please try again.");
     return;
+  } else if (!passwordLength) {
+    alert(
+      "A password length must be inputted and then confirmed. Please try again."
+    );
+    return;
   } else if (passwordLength < 8 || passwordLength > 128) {
     alert("Entered value must be between 8 and 128. Please try again.");
     return;
@@ -141,6 +146,11 @@ function writePassword() {
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
+  if (passwordText.value == "undefined") {
+    passwordText.value =
+      "Not enough options selected to generate a password. Please try again.";
+  }
 }
 
 // Add event listener to generate button
