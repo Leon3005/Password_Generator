@@ -145,6 +145,9 @@ function writePassword() {
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
 
+  if (password.includes("undefined")) {
+    password = "Please select at least 1 available option.";
+  }
   passwordText.value = password;
 }
 
