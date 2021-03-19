@@ -146,11 +146,6 @@ function writePassword() {
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-  if (passwordText.value == "undefined") {
-    passwordText.value =
-      "Not enough options selected to generate a password. Please try again.";
-  }
 }
 
 // Add event listener to generate button
