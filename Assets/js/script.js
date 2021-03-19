@@ -146,7 +146,7 @@ function writePassword() {
   let passwordText = document.querySelector("#password");
 
   // if statement that asks user to try again if the password is undefined
-  if (password.includes("undefined")) {
+  if (typeof password == "undefined" || password.includes("undefined")) {
     password = "Please select at least 1 available option.";
   }
   passwordText.value = password;
