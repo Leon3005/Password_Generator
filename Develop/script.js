@@ -120,7 +120,7 @@ function generatePassword() {
     !passwordNumbersPrompt &&
     !passwordSpecialPrompt
   ) {
-    console.log("All options were cancelled");
+    alert("All available options were cancelled. Please try again.");
   }
 
   //Chooses a random index from passwordData. Dependant on passwordLength
