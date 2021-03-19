@@ -114,6 +114,7 @@ function generatePassword() {
     Array.prototype.push.apply(passwordData, specialCharacters);
   }
 
+  // If all options are cancelled, an alert will pop up
   if (
     !passwordLCasePrompt &&
     !passwordUCasePrompt &&
