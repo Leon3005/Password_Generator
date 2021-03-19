@@ -114,6 +114,15 @@ function generatePassword() {
     Array.prototype.push.apply(passwordData, specialCharacters);
   }
 
+  if (
+    !passwordLCasePrompt &&
+    !passwordUCasePrompt &&
+    !passwordNumbersPrompt &&
+    !passwordSpecialPrompt
+  ) {
+    console.log("All options were cancelled");
+  }
+
   //Chooses a random index from passwordData. Dependant on passwordLength
   for (let i = 0; i < passwordLength; i++) {
     let index = Math.floor(Math.random() * passwordData.length);
