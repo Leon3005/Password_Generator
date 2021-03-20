@@ -8,7 +8,11 @@ The completed version allows the user to generate a password between 8-128 chara
 
 ## Screenshots
 
+Password Generator page:
+
 ![Alt text](./Assets/images/generatorscreenshot.png "Generator Screenshot")
+
+Generated Password:
 
 ![Alt text](./Assets/images/generated.png "Generated Password")
 
