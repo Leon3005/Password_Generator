@@ -1,4 +1,4 @@
-# Password Generator - HOW03
+# Password Generator
 
 ## Description
 
